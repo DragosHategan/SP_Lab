@@ -1,12 +1,13 @@
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
 	
 	private String title;
-	private List<String> paragraphs;
-	private List<String> images;
-	private List<String> tables;
+	private List<String> paragraphs = new ArrayList<String>();
+	private List<String> images = new ArrayList<String>();
+	private List<String> tables = new ArrayList<String>();
 
 	public Book(String title) {
 		this.title = title;
