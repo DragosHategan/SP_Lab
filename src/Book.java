@@ -8,9 +8,19 @@ public class Book {
 	private List<String> paragraphs = new ArrayList<String>();
 	private List<String> images = new ArrayList<String>();
 	private List<String> tables = new ArrayList<String>();
+	private List<Author> authors = new ArrayList<Author>();
+	private List<Chapter> chapters = new ArrayList<Chapter>();
 
 	public Book(String title) {
 		this.title = title;
+	}
+
+	public void addAuthor(Author author){
+		this.authors.add(author);
+	}
+
+	public void createChapter(Chapter chapter){
+		this.chapters.add(chapter);
 	}
 
 	public void print() {

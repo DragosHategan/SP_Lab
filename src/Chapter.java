@@ -1,5 +1,8 @@
 public class Chapter {
-    public Chapter(){
-        
+
+    private String nume;
+
+    public Chapter(String nume){
+        this.nume = nume;
     }
 }
