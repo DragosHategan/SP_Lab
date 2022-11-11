@@ -1,12 +1,12 @@
 public class Author {
 
-    private String nume;
+    private String authorName;
 
-    public Author(String nume){
-        this.nume = nume;
+    public Author(String authorName){
+        this.authorName = authorName;
     }
 
-    public String getNume(){
-        return this.nume;
+    public String getauthorName(){
+        return this.authorName;
     }
 }

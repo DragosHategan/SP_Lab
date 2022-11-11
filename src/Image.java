@@ -1,5 +1,12 @@
 public class Image {
-    public Image(){
-        
+
+    private String imageName;
+
+    public Image(String imageName){
+        this.imageName = imageName;
+    }
+
+    public String getImageName(){
+        return this.imageName;
     }
 }

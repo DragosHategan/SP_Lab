@@ -19,8 +19,14 @@ public class Book {
 		this.authors.add(author);
 	}
 
-	public void createChapter(Chapter chapter){
-		this.chapters.add(chapter);
+	public int createChapter(String nameChapter){
+		Chapter lastChapter = new Chapter(nameChapter);
+		this.chapters.add(lastChapter);
+		return this.chapters.indexOf(lastChapter);
+	}
+
+	public Chapter getChapter(int indexChapter){
+		return this.chapters.get(indexChapter);
 	}
 
 	public void print() {
